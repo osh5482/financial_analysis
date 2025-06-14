@@ -1,0 +1,23 @@
+﻿,Code,Symbol,Name,Category,Underlying,Market,last_updated
+0,SPY,SPY,SPDR S&P 500 ETF,Index,S&P 500,US,2025-06-14 23:29:48
+1,QQQ,QQQ,Invesco QQQ Trust,Index,NASDAQ 100,US,2025-06-14 23:29:48
+2,VTI,VTI,Vanguard Total Stock Market,Index,Total Market,US,2025-06-14 23:29:48
+3,IWM,IWM,iShares Russell 2000,Index,Russell 2000,US,2025-06-14 23:29:48
+4,DIA,DIA,SPDR Dow Jones Industrial Average,Index,Dow Jones,US,2025-06-14 23:29:48
+5,XLF,XLF,Financial Select Sector SPDR,Sector,Financials,US,2025-06-14 23:29:48
+6,XLK,XLK,Technology Select Sector SPDR,Sector,Technology,US,2025-06-14 23:29:48
+7,XLE,XLE,Energy Select Sector SPDR,Sector,Energy,US,2025-06-14 23:29:48
+8,XLV,XLV,Health Care Select Sector SPDR,Sector,Healthcare,US,2025-06-14 23:29:48
+9,GLD,GLD,SPDR Gold Shares,Commodity,Gold,US,2025-06-14 23:29:48
+10,SLV,SLV,iShares Silver Trust,Commodity,Silver,US,2025-06-14 23:29:48
+11,USO,USO,United States Oil Fund,Commodity,Oil,US,2025-06-14 23:29:48
+12,TLT,TLT,iShares 20+ Year Treasury Bond,Bond,Treasury,US,2025-06-14 23:29:48
+13,IEF,IEF,iShares 7-10 Year Treasury Bond,Bond,Treasury,US,2025-06-14 23:29:48
+14,LQD,LQD,iShares Investment Grade Corporate Bond,Bond,Corporate,US,2025-06-14 23:29:48
+15,EFA,EFA,iShares MSCI EAFE,International,EAFE,US,2025-06-14 23:29:48
+16,EEM,EEM,iShares MSCI Emerging Markets,International,Emerging Markets,US,2025-06-14 23:29:48
+17,VEA,VEA,Vanguard FTSE Developed Markets,International,Developed Markets,US,2025-06-14 23:29:48
+18,VYM,VYM,Vanguard High Dividend Yield,Dividend,High Dividend,US,2025-06-14 23:29:48
+19,SCHD,SCHD,Schwab US Dividend Equity,Dividend,Dividend,US,2025-06-14 23:29:48
+20,VUG,VUG,Vanguard Growth,Growth,Growth,US,2025-06-14 23:29:48
+21,MTUM,MTUM,iShares MSCI USA Momentum Factor,Factor,Momentum,US,2025-06-14 23:29:48

@@ -1,0 +1,12 @@
+﻿,Index_ID,Symbol,Name,Description,Market,Enabled,last_updated
+0,KOSPI,KS11,코스피 지수,한국종합주가지수,KR,True,2025-06-14 23:18:34
+1,KOSDAQ,KQ11,코스닥 지수,코스닥종합지수,KR,True,2025-06-14 23:18:34
+2,KOSPI200,KS200,코스피 200,코스피 200 지수,KR,True,2025-06-14 23:18:34
+3,DOW,DJI,다우존스 지수,다우존스 산업평균지수,US,True,2025-06-14 23:18:34
+4,NASDAQ_INDEX,IXIC,나스닥 지수,나스닥 종합지수,US,True,2025-06-14 23:18:34
+5,SP500_INDEX,US500,S&P 500 지수,S&P 500 지수,US,True,2025-06-14 23:18:34
+6,KOSPI_LARGE,KS200,코스피 대형주,코스피 대형주 지수,KR,True,2025-06-14 23:18:34
+7,KOSDAQ_STAR,KQ150,코스닥 150,코스닥 우량기업 150개,KR,True,2025-06-14 23:18:34
+8,RUSSELL_2000,RUT,러셀 2000,미국 소형주 지수,US,True,2025-06-14 23:18:34
+9,VIX,VIX,VIX 지수,시장 변동성 지수,US,True,2025-06-14 23:18:34
+10,NASDAQ_100,NDX,나스닥 100,나스닥 대형 기술주 100개,US,True,2025-06-14 23:18:34
