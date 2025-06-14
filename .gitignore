@@ -1,12 +1,12 @@
-# Byte-compiled / optimized / DLL files
+# 바이트 컴파일 / 최적화 / DLL 파일
 __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
+# C 확장
 *.so
 
-# Distribution / packaging
+# 배포 / 패키징
 .Python
 build/
 develop-eggs/
@@ -27,16 +27,16 @@ share/python-wheels/
 MANIFEST
 
 # PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+#  보통 이러한 파일들은 PyInstaller가 exe를 빌드하기 전에 
+#  파이썬 스크립트에 의해 템플릿에서 작성되어 날짜/기타 정보를 주입합니다.
 *.manifest
 *.spec
 
-# Installer logs
+# 설치 로그
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
+# 단위 테스트 / 커버리지 리포트
 htmlcov/
 .tox/
 .nox/
@@ -51,24 +51,24 @@ coverage.xml
 .pytest_cache/
 cover/
 
-# Translations
+# 번역
 *.mo
 *.pot
 
-# Django stuff:
+# Django 관련:
 *.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
-# Flask stuff:
+# Flask 관련:
 instance/
 .webassets-cache
 
-# Scrapy stuff:
+# Scrapy 관련:
 .scrapy
 
-# Sphinx documentation
+# Sphinx 문서
 docs/_build/
 
 # PyBuilder
@@ -83,51 +83,49 @@ profile_default/
 ipython_config.py
 
 # pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
+#   라이브러리나 패키지의 경우, 이 파일들을 무시하는 것이 좋습니다. 
+#   코드가 여러 환경에서 실행되도록 의도되었기 때문입니다. 그렇지 않으면 체크인하세요:
 # .python-version
 
 # pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
+#   pypa/pipenv#598에 따르면, 버전 관리에 Pipfile.lock을 포함하는 것이 권장됩니다.
+#   하지만 협업 시 플랫폼별 의존성이나 크로스 플랫폼 지원이 없는 의존성이 있는 경우,
+#   pipenv는 작동하지 않는 의존성을 설치하거나 필요한 모든 의존성을 설치하지 않을 수 있습니다.
 #Pipfile.lock
 
 # UV
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
+#   Pipfile.lock과 유사하게, 일반적으로 버전 관리에 uv.lock을 포함하는 것이 권장됩니다.
+#   이는 특히 바이너리 패키지의 재현성을 보장하기 위해 권장되며, 라이브러리보다는 
+#   더 일반적으로 무시됩니다.
 #uv.lock
 
 # poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
+#   Pipfile.lock과 유사하게, 일반적으로 버전 관리에 poetry.lock을 포함하는 것이 권장됩니다.
+#   이는 특히 바이너리 패키지의 재현성을 보장하기 위해 권장되며, 라이브러리보다는 
+#   더 일반적으로 무시됩니다.
 #   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
 #poetry.lock
 
 # pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#   Pipfile.lock과 유사하게, 일반적으로 버전 관리에 pdm.lock을 포함하는 것이 권장됩니다.
 #pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
+#   pdm은 프로젝트 전체 설정을 .pdm.toml에 저장하지만, 버전 관리에 포함하지 않는 것이 권장됩니다.
 #   https://pdm.fming.dev/latest/usage/project/#working-with-version-control
 .pdm.toml
 .pdm-python
 .pdm-build/
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+# PEP 582; github.com/David-OConnor/pyflow 및 github.com/pdm-project/pdm 등에서 사용
 __pypackages__/
 
-# Celery stuff
+# Celery 관련
 celerybeat-schedule
 celerybeat.pid
 
-# SageMath parsed files
+# SageMath 파싱된 파일
 *.sage.py
 
-# Environments
+# 환경 변수
 .env
 .venv
 env/
@@ -136,14 +134,14 @@ ENV/
 env.bak/
 venv.bak/
 
-# Spyder project settings
+# Spyder 프로젝트 설정
 .spyderproject
 .spyproject
 
-# Rope project settings
+# Rope 프로젝트 설정
 .ropeproject
 
-# mkdocs documentation
+# mkdocs 문서
 /site
 
 # mypy
@@ -151,44 +149,52 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
-# Pyre type checker
+# Pyre 타입 검사기
 .pyre/
 
-# pytype static type analyzer
+# pytype 정적 타입 분석기
 .pytype/
 
-# Cython debug symbols
+# Cython 디버그 심볼
 cython_debug/
 
 # PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+#  JetBrains용 템플릿은 별도의 JetBrains.gitignore에서 관리됩니다.
+#  https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore에서 찾을 수 있으며
+#  글로벌 gitignore에 추가하거나 이 파일에 병합할 수 있습니다. 보다 확실한 방법을 원한다면
+#  (권장하지 않음) 다음을 주석 해제하여 전체 idea 폴더를 무시할 수 있습니다.
 #.idea/
 
 # Abstra
-# Abstra is an AI-powered process automation framework.
-# Ignore directories containing user credentials, local state, and settings.
-# Learn more at https://abstra.io/docs
+# Abstra는 AI 기반 프로세스 자동화 프레임워크입니다.
+# 사용자 인증 정보, 로컬 상태 및 설정이 포함된 디렉토리를 무시합니다.
+# 자세한 내용은 https://abstra.io/docs에서 확인하세요
 .abstra/
 
 # Visual Studio Code
-#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
-#  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#  and can be added to the global gitignore or merged into this file. However, if you prefer, 
-#  you could uncomment the following to ignore the enitre vscode folder
+#  Visual Studio Code용 템플릿은 별도의 VisualStudioCode.gitignore에서 관리됩니다.
+#  https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore에서 찾을 수 있으며
+#  글로벌 gitignore에 추가하거나 이 파일에 병합할 수 있습니다. 하지만 원한다면
+#  다음을 주석 해제하여 전체 vscode 폴더를 무시할 수 있습니다
 # .vscode/
 
-# Ruff stuff:
+# Ruff 관련:
 .ruff_cache/
 
-# PyPI configuration file
+# PyPI 설정 파일
 .pypirc
 
 # Cursor
-#  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
-#  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
-#  refer to https://docs.cursor.com/context/ignore-files
+#  Cursor는 AI 기반 코드 에디터입니다. `.cursorignore`는 자동완성 및 코드 분석과 같은 
+#  AI 기능에서 제외할 파일/디렉토리를 지정합니다. 민감한 데이터에 권장됩니다.
+#  https://docs.cursor.com/context/ignore-files 참조
 .cursorignore
 .cursorindexingignore
+
+# 로그 파일들 (프로젝트별 추가)
+# 모든 로그 파일과 로그 디렉토리 제외
+logs/
+*.log
+*.log.*
+*.out
+*.err
