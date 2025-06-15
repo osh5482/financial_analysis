@@ -150,68 +150,6 @@ EXCHANGE_RATES = {
     },
 }
 
-# 원자재 수집 설정
-COMMODITIES = {
-    # 귀금속
-    "GOLD": {
-        "symbol": "GOLDAMGBD228NLBM",
-        "name": "금 가격",
-        "description": "런던 불리언 마켓 금 가격 (USD)",
-        "category": "precious_metals",
-        "data_source": "FRED",
-        "enabled": True,
-    },
-    # 에너지
-    "WTI_CRUDE": {
-        "symbol": "POILWTIUSDM",
-        "name": "WTI 원유",
-        "description": "서부 텍사스 중질유 가격 (USD/배럴)",
-        "category": "energy",
-        "data_source": "FRED",
-        "enabled": True,
-    },
-    "BRENT_CRUDE": {
-        "symbol": "POILBREUSDM",
-        "name": "브렌트 원유",
-        "description": "북해 브렌트 원유 가격 (USD/배럴)",
-        "category": "energy",
-        "data_source": "FRED",
-        "enabled": True,
-    },
-    "DUBAI_CRUDE": {
-        "symbol": "POILDUBUSDM",
-        "name": "두바이 원유",
-        "description": "두바이 원유 가격 (USD/배럴)",
-        "category": "energy",
-        "data_source": "FRED",
-        "enabled": False,  # 한국 수입에 중요하지만 필요시 활성화
-    },
-    "NATURAL_GAS": {
-        "symbol": "NG",
-        "name": "천연가스",
-        "description": "천연가스 선물 가격 (NYMEX)",
-        "category": "energy",
-        "data_source": "FDR",
-        "enabled": False,  # 필요시 활성화
-    },
-    # 원자재 지수
-    "DJP": {
-        "symbol": "DJP",
-        "name": "DJ 원자재 지수 ETF",
-        "description": "DJ-UBS 원자재 지수 추종 ETF",
-        "category": "commodity_index",
-        "data_source": "FDR",
-        "enabled": False,  # 필요시 활성화
-    },
-    "PDBC": {
-        "symbol": "PDBC",
-        "name": "Invesco 원자재 ETF",
-        "description": "Invesco DB 원자재 인덱스 추종 ETF",
-        "category": "commodity_index",
-        "data_source": "FDR",
-        "enabled": False,  # 필요시 활성화
-    },
-}
 
 # 데이터 검증 설정
 VALIDATION_CONFIG = {
@@ -262,20 +200,6 @@ def get_enabled_exchange_rates() -> dict[str, dict]:
     return {k: v for k, v in EXCHANGE_RATES.items() if v.get("enabled", False)}
 
 
-def get_enabled_commodities() -> dict[str, dict]:
-    """활성화된 원자재 설정 반환"""
-    return {k: v for k, v in COMMODITIES.items() if v.get("enabled", False)}
-
-
-def get_commodities_by_category(category: str) -> dict[str, dict]:
-    """카테고리별 원자재 설정 반환"""
-    return {
-        k: v
-        for k, v in COMMODITIES.items()
-        if v.get("category") == category and v.get("enabled", False)
-    }
-
-
 def get_default_date_range() -> tuple[str, str]:
     """기본 날짜 범위 반환 (시작일, 종료일)"""
     start_date = DEFAULT_CONFIG["start_date"]
@@ -311,10 +235,6 @@ def print_collection_summary() -> None:
     print(f"\n💱 환율 ({len(get_enabled_exchange_rates())}개):")
     for name, config in get_enabled_exchange_rates().items():
         print(f"  - {config['name']} ({config['symbol']})")
-
-    print(f"\n🥇 원자재 ({len(get_enabled_commodities())}개):")
-    for name, config in get_enabled_commodities().items():
-        print(f"  - {config['name']} ({config['symbol']}) [{config['category']}]")
 
     start_date, end_date = get_default_date_range()
     print(f"\n📅 수집 기간: {start_date} ~ {end_date}")
